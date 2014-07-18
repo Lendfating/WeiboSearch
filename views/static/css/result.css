@@ -1,0 +1,213 @@
+body{
+	background-image: url(../images/body_bg.png);
+}
+div.search_head{
+	height: 62px;
+	display: block;
+	padding-top: 20px;
+}
+	a.logo_img{
+		background: url(../images/search_logo.png) no-repeat;
+		width: 130px;
+		height: 35px;
+		float: left;
+	}
+a{
+	color: #0078b6;
+	text-decoration: none;
+}
+
+/*  主结果显示区  */
+div.search_result{
+	
+}
+	/* 查询返回结果数显示 */
+	div.search_top_count{
+		color: #777;
+		float: left;
+		margin-left: 144px;
+		width: 308px;
+		height: 19px;
+	}
+	/* 条件过滤选项 */
+	div.filter_topbar{
+		width: 650px;
+		margin: -15px 0 -14px;
+		background: url(../images/filter_topbar_bg.png) repeat-x 0 100%;
+		border: 0;
+		text-align: right;
+		border-bottom: 2px solid #9DCCE3;
+	}
+		div.filter_topbar a{
+			display: inline-block;
+			position: relative;
+			bottom: -2px;
+			margin-right: 20px;
+			padding-bottom: 13px;
+		}
+		div.filter_topbar a:hover, div.filter_topbar a.cur{
+			background: url(../images/bg_check.png) no-repeat 50% 100%;
+		}
+		div.filter_topbar a.cur{
+			color: #333;
+			cursor: default;
+			font-weight: bold;
+		}
+	/* 结果主显示区 */
+	div.content{
+		display: block;
+		margin-top: 14px;
+		padding-top: 20px;
+		min-height: 400px;
+		background: url(../images/c_bg.png) repeat-y;
+		padding-bottom: 20px;
+	}
+		/* 左侧主显示区 */
+		div.content_left{
+			float: left;
+			width: 650px;
+			display: block;
+			overflow: hidden;
+		}
+			/* 相关用户信息显示区 */
+			div.person_info{
+				padding: 0 40px;
+				border-bottom: 1px solid #e6e7e8;
+			}
+				div.person_info dl.info{
+					display: block;
+				}
+					div.person_info dl.info dt.info_pic{
+						float: left;
+					}
+					div.person_info dl.info dd.info_detail{
+						margin: 0 30px 0 95px;
+						line-height: 21px;
+						zoom: 1;
+					}	
+						div.person_info dl.info dd.info_detail p{
+							margin: 0;
+							padding: 0;
+							font-size: 14px;
+						}
+						div.person_info dl.info dd.info_detail p.name{
+						}
+							div.person_info p.name a{
+								font-size: 14px;
+								font-weight: bold;
+								margin-right: 5px;
+								color: #0078b6;
+								text-decoration: none;
+							}
+						div.person_info dl.info dd.info_detail p.number{
+							margin-top: 10px;
+						}
+						div.person_info dl.info dd.info_detail p.card{
+							margin-top: 5px;
+						}
+			/* 相关微博信息显示区 */
+			div.weibos_list{
+				overflow: hidden;
+				margin: 0 40px;
+			}
+				dl.weibo{
+					border-bottom-width: 1px;
+					border-bottom-style: dotted;
+				}
+					dt.face{
+						float: left;
+						display: inline;
+						width: 50px;
+						padding: 3px 0 6px;
+					}
+					dd.content{
+						font-size: 14px;
+						margin: 0 0 0 60px;
+						line-height: 22px;
+					}
+						dd.content p.content{
+							font-size: 14px;
+						}
+						dd.content p.bottom{
+							font-size: 12px;
+							color: #9abbc8;
+						}
+							p.bottom span.bottom_left{
+							}
+							p.bottom span.bottom_right{
+								float: right;
+								display: inline;
+							}
+							p.bottom i.W_vline{
+								margin: 0 5px;
+								color: #999;
+								font-style: normal;
+								font-weight: normal;
+							}
+					dd.clear{
+						clear: both;
+						height: 0;
+						font: 0/0 Arial;
+						visibility: hidden;
+					}
+		/* 右侧主显示区 */
+		div.content_right{
+			float: right;
+			width: 220px;
+			display: block;
+			overflow: hidden;
+			margin: 0 40px;
+		}
+			div.content_right ul.search_related_list{
+				overflow: hidden;
+				-webkit-padding-start: 0;
+			}
+			ul.search_related_list li{
+				margin: 4px;
+				height: 21px;
+				line-height: 21px;
+				list-style: none;
+				overflow: hidden;
+			}
+			ul.search_related_list li a{
+				width: 220px;
+				overflow: hidden;
+				float: left;
+			}
+
+/* 划过预览用户信息显示区 */
+div.info_box{
+	background: #fff;
+	border: 1px solid #ccc;
+	position: absolute;
+	z-index: 9991;
+	width: 360px;
+	display: none;
+	padding: 12px 12px;
+}
+	div.info_box dl{
+		margin: 0;
+	}
+		div.info_box dl.info dt.info_pic{
+			float: left;
+		}
+		div.info_box dl.info dd.info_detail{
+			margin-left: 60px;
+			line-height: 21px;
+			zoom: 1;
+		}	
+			div.info_box dl dd p{
+				margin: 0;
+				padding: 0;
+				font-size: 14px;
+			}
+			div.info_box dl.info dd.info_detail p.name{
+				margin-top: 0;
+			}
+				div.info_box p.name a{
+					font-size: 14px;
+					font-weight: bold;
+					margin-right: 5px;
+					color: #0078b6;
+					text-decoration: none;
+				}

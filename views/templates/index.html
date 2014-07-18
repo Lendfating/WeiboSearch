@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{{ title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ static_url("css/common.css") }}"></link>
+    <script src="{{ static_url("js/jquery-1.7.min.js") }}"></script>
+    <script src="{{ static_url("js/jquery.easing.1.3.js") }}"></script>
+    <script src="{{ static_url("js/adv_search.js") }}"></script>
+    <script src="{{ static_url("js/calendar.js") }}"></script>
+    <script src="{{ static_url("js/autocomplete.js") }}"></script>
+</head>
+<body>
+   	<div class="main">
+		<div class="index_logo">
+			<h1><a class="logo_img" href="javascript:void(0);"></a></h1>
+		</div>
+		<!-- input box -->
+		<div class="search_box">
+			<div class="search_input_wrap">
+				<form class="search_input_border" action="/search">
+					<div class="searchInp_box">
+						<input type="text" class="searchInp_form" name="query" maxlength="40" autocomplete="off" oninput="autoComplete(this)"></input>
+					</div>
+					<div class="searchBtn_box">
+						<input class="searchBtn" type="submit" value=""></input>
+					</div>
+				</form>
+			</div>
+			<div class="search_setting_wrap">
+				<a class="adv_setting" onclick="javascript:searcher.adv_setting(); return false;" href="#" >高级搜索</a>
+			</div>
+		</div>
+   	</div>
+   	<div style="display:none;"></div>
+   	
+   	<div id="bg_shade" class="bg_shade" style="display:none;"></div>
+    <div id="adv_search" class="adv_search" style="display:none;">
+    	<div class="adv_search_bg">
+			<div class="title" style="cursor: move;">
+				<span>高级搜索</span>
+				<a title="关闭" onclick="javascript:searcher.close(); return false;" href="#"></a>
+			</div>
+			<div class="adv_form">
+				<div class="adv_keywords">
+					关键词：
+					<input type="text" value="" name="query" style="width:200px;" autocomplete="off"></input>
+				</div>
+				<div class="adv_time">
+					时间段：
+					<input type="text" value="请选择日期" name="start_time" style="color:#b5b5b5;" onclick="calendar.showView(this)"></input>
+					至 
+					<input type="text" value="请选择日期" name="end_time" style="color:#b5b5b5;" onclick="calendar.showView(this)"></input>
+				</div>
+				<div class="buttons">
+					<a onclick="javascript:searcher.search(); return false;" href="#" class="W_btn_cb"><span>搜索</span></a>
+					<a onclick="javascript:searcher.close(); return false;" href="#" class="cancelbtn">取消</a>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+	</div>
+	<div id="calendar" class="calendar" style="display:none;">
+		<div class="selector">
+			<select class="month" onchange="calendar.updateView()" ></select>
+			<select class="year" onchange="calendar.updateView()"></select>
+		</div>
+		<ul class="weeks"></ul>
+		<ul class="days"></ul>
+	</div>
+	<div id="suggest_list" class="suggest_list" style="left: 332px; top: 70px;">
+	</div>
+</body>
+</html>

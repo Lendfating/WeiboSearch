@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//core/Ranker.py=utf-8
+encoding//core/abstract_inverted_index.py=utf-8
+encoding//core/auto_complete.py=utf-8
+encoding//core/extend_query.py=utf-8
+encoding//core/inverted_index.py=utf-8
+encoding//core/posting.py=utf-8
+encoding//core/storage.py=utf-8
+encoding//core/term.py=utf-8
+encoding//handlers/AutoCompleteHandler.py=utf-8
+encoding//handlers/GetUserHandler.py=utf-8
+encoding//handlers/SearchHandler.py=utf-8
+encoding/main.py=utf-8

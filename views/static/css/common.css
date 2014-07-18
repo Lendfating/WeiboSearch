@@ -1,0 +1,291 @@
+body{
+	background-color: #fff;
+	background-image: url(../images/index_bg.png);
+	background-repeat: repeat-x;
+	background-position: center 0;
+}
+a{
+	color: #0078b6;
+	text-decoration: none;
+}
+div.main{
+	width: 950px;
+	margin: 0 auto;
+}
+div.index_logo{
+	margin-top: 140px;
+}
+	div.index_logo a.logo_img{
+		display: inline-block;
+		background: url(../images/index_logo.png) no-repeat center center;
+		width: 330px;
+		height: 91px;
+		outline: none;
+		margin: 0 auto 0 310px;
+	}
+div.search_box{
+	margin: 47px 0 0 180px;
+}
+	div.search_input_wrap{
+		float: left;
+		width: 535px;
+		border: solid 3px #d5eaf4;
+		border-radius: 3px;
+		padding: 1px;
+	}
+	form.search_input_border{
+		height: 35px;
+		border-radius: 2px;
+		border: solid 1px #4fa4cf;
+	}
+		div.search_input_wrap div.searchInp_box{
+			float: left;
+			width:460px;
+			background: #fff;
+		}
+			div.searchInp_box input.searchInp_form{
+				color: #333;
+				border: none;
+				font-size: 20px;
+				font-family: 微软雅黑;
+				width: 100%;
+				height: 33px;
+				line-height: 33px;
+				padding-left: 12px;
+				overflow: hidden;
+				background: none;
+			}
+		div.search_input_wrap div.searchBtn_box{
+			height: 37px;
+			width: 74px;
+			float: right;
+			overflow: hidden;
+			margin: -1px -1px -1px 0;
+		}
+			div.searchBtn_box input.searchBtn{
+				display: block;
+				width: 74px;
+				height: 37px;
+				outline: none;
+				border: none;
+				background: url(../images/search_btn.png) no-repeat -96px 0;
+			}
+			.searchBtn:hover {
+				background-position: -96px -39px;
+			}
+	div.search_setting_wrap{
+		float: left;
+		height: 45px;
+		line-height: 45px;
+		margin-left: 10px;
+	}
+		div.search_setting_wrap a.adv_setting{
+			font: 15px;
+			color: #0078b6;
+		}
+
+		
+/*---------------高级搜索框------------------*/
+div.bg_shade{
+	background:#6f6f6f; 
+	width: 100%;   
+	height: 100%;   
+	left:0;   
+	top:0;/*FF IE7*/   
+	filter:alpha(opacity=50);/*IE*/   
+	opacity:0.5;/*FF*/   
+	z-index:1000;   
+	position:fixed!important;/*FF IE7*/   
+	position:absolute;/*IE6*/   
+	_top:       expression(eval(document.compatMode &&   
+				document.compatMode=='CSS1Compat') ?   
+				documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/   
+				document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2); 
+}
+div.adv_search{
+	z-index: 10001;
+	color: #333333;
+	text-align:left; 
+	padding: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: url(../images/layer_bg.png) repeat;
+	font: bold 30px Arial,Helvetica,sans-serif;
+	left:50%;   
+	top:50%;   
+	margin-left:-175px!important;/*FF IE7 该值为本身宽的一半 */   
+	margin-top:-87px!important;/*FF IE7 该值为本身高的一半*/   
+	margin-top:0px;   
+	position:fixed!important;/* FF IE7*/   
+	position:absolute;/*IE6*/   
+	_top:       expression(eval(document.compatMode &&   
+				document.compatMode=='CSS1Compat') ?   
+				documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/   
+				document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/  
+}
+div.adv_search_bg{ 
+	position: relative;
+	background: #fff;
+	border: 1px solid #c6c6c6;
+}
+	div.adv_search div.title{
+		background: #f3f3f3;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 0 0 20px;
+		color: #595959;
+		font-size: 14px;
+		vertical-align: middle;
+	}
+		div.adv_search div.title span{
+			float:left;
+			line-height: 30px;
+			color: #595959;
+			font-size: 14px;
+		}
+		div.adv_search div.title a{
+			float:right;
+			cursor: pointer;
+			width: 20px;
+			height: 20px;
+			background: url(../images/ico.png) no-repeat 5px -250px;
+			display: block;
+		}
+		div.adv_search div.title a:hover {
+			background-position:0 -1954px;
+		}
+	div.adv_search div.adv_form{
+		cursor: auto;
+		margin: 20px 40px;
+		font-size: 12px;
+		font-weight:normal;
+		white-space: nowrap;
+	}
+		div.adv_form div{
+			color: #666;
+			margin: 3px 0;
+			line-height: 25px;
+		}
+		div.adv_form div.buttons{
+			margin-top: 10px;
+		}
+		div.adv_form input{
+			border: 1px solid #c6c6c6;
+			-webkit-box-shadow: 1px 1px 0 0 #f0f0f0 inset;
+			-moz-box-shadow: 1px 1px 0 0 #f0f0f0 inset;
+			height: 26px;
+			height: 20px\9;
+			padding: 0 0 0 2px;
+			padding: 6px 0 0 2px\9;
+			vertical-align: top;
+			color: #666;
+			width: 84px;
+			padding-left: 4px;
+			margin-right: 4px;
+		}
+		div.adv_form a{
+			margin-right: 10px;
+			text-decoration: none;
+		}
+			div.adv_form a span{
+				color: #fff;
+				height: 28px;
+				line-height: 28px;
+				margin-left: 50px;
+				min-width: 35px;
+				text-align: center;
+				padding: 0 20px 0 18px;
+				display: inline-block;
+				cursor: pointer;
+				font-size: 12px;
+				font-weight: 700;
+				border-radius: 3px;
+				background: url(../images/btn.png) no-repeat 0 -316px;
+			}
+			
+/*   mini日历   */
+div.calendar{
+	border: 1px solid #ccc;
+	padding: 5px;
+	background-color: #fff;
+	width: 161px;
+	height: auto;
+	position: absolute;
+	color: #000;
+	display: block;
+	z-index: 10005;
+}
+	div.calendar div.selector{
+		height: 24px;
+		padding: 2px 0 0;
+		display: block;
+	}
+		div.calendar .selector .month, div.calendar .selector .year {
+			float: left;
+			font-size: 12px;
+			width: 73px;
+			border: 1px solid #CCC;
+			height: 19px;
+		}
+		div.calendar .selector .year {
+			width: 78px;
+			margin-left: 10px;
+		}
+	div.calendar .weeks {
+		height: 18px;
+		margin-bottom: 2px;
+		background: #b6d1f9;
+		color: #fff;
+		font-size: 12px;
+	}
+	div.calendar .weeks, div.calendar .days {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		width: 100%!important;
+		width: 161px;
+	}
+		div.calendar .weeks li, div.calendar .days li {
+			float: left;
+			height: 18px;
+			line-height: 18px;
+			text-align: center;
+			width: 23px;
+			list-style: none;
+		}
+		div.calendar .weeks li{
+			color: #fff;
+			font-size: 12px;
+		}
+		div.calendar .days li{
+			font-size: 12px;
+			font-family: Arial;
+		}
+		div.calendar .days li a {
+			display: block;
+			text-decoration: none;
+			height: 100%;
+			color: #43609c;
+		}
+		div.calendar .days li a:hover ,div.calendar .days li a.day{
+			background-color: #5d94e6;
+			color: #fff;
+		}
+	
+/*  自动补全下拉菜单   */
+div.suggest_list{
+	background: #fff;
+	border: 1px solid #ccc;
+	position: absolute;
+	z-index: 9990;
+	width: 460px;
+	display: none;
+}
+	div.suggest_list ul{
+	}
+		div ul li{
+			overflow: hidden;
+			font-size: 18px;
+			line-height: 28px;
+			margin-left: -25px;
+		}
